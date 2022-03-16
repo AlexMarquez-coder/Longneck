@@ -1,0 +1,237 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body {
+    /* background-color: antiquewhite; */
+    background-color: #55b0c2;
+    font-family: relative sans-serif;
+    color: black;
+
+}
+
+#dashboard {
+    display: grid;
+    grid-template-columns: 190px 1fr;
+    width: 100%;
+    grid-gap: 20px;
+    grid-template-areas: "header   header" 
+                         "bodywb     bodywb"
+                         "bodywb     bodywb"  
+                         "bodywb     bodywb"  
+                         "footer     footer" 
+                         "footer     footer";
+}
+
+.item {
+    /* background-color: #ffa700; */
+    padding: 5px;
+    min-height: 50px;
+}
+
+.header {
+    /* background-color: green; */
+    background-color: #fa4343;
+    grid-area: header;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    /* padding-top: 15px; */
+    font-size: 18px;
+}
+
+.bodywb {
+    grid-area: bodywb;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #fa4343;
+}
+
+.logo {
+  /* width: 200%; */
+  height: 100%;
+  padding-right: 90%;
+  
+}
+
+/* Begin fotoslider */
+* {box-sizing: border-box;}
+/* body {font-family: Verdana, sans-serif;} */
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #55b0c2;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+/* body {
+    font-family: Arial;
+    font-size: 17px;
+    padding: 8px;
+  } */
+  
+  .row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    margin: 0 -16px;
+  }
+  
+  .col-25 {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+  }
+  
+  /* .col-25 {
+    padding: 0 16px;
+  } */
+  
+  .container {
+    background-color: #E2E2E2;
+    /* padding: 5px 20px 15px 20px; */
+    /* border: 1px solid #04b149; */
+    border-radius: 3px;
+  }
+  
+  
+  label {
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+  }
+  
+  a {
+    color: #2196F3;
+  }
+  
+  hr {
+    border: 1px solid lightgrey;
+  }
+  
+  
+  /* Responsive layout - when the screen is less than 800px wide, 
+  make the two columns stack on top of each other instead of next to each other 
+  (also change the direction - make the "cart" column go on top) */
+  @media (max-width: 800px) {
+    .row {
+      flex-direction: column-reverse;
+    }
+    .col-25 {
+      margin-bottom: 20px;
+    }
+  }
+
+  /* Eind prijzen */
+
+h3 {
+  text-align: center;
+} 
+
+.text {
+  text-align: center;
+  margin: auto;
+}
+
+
+/* p {
+  text-align: center;
+} */
+
+.footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: black;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  a:active {
+    text-decoration: none;
+  }
+
+@media screen and (min-width: 900px) {
+
+    #dashboard {
+        grid-template-columns: 200px 1fr 1fr 200px;
+        grid-template-areas: "header    header    header    header"
+                             "bodywb    bodywb    bodywb    bodywb"
+                             "footer    footer    footer    footer";
+                             
+    }
+
+    h1 {
+        text-align: center;
+        padding-top: 15px;
+        font-size: 30px;
+    }
+    
+   
+}
