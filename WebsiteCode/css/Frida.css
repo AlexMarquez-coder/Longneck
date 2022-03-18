@@ -35,8 +35,8 @@ body {
     /* background-color: green; */
     background-color: #fa4343;
     grid-area: header;
-    /* display: flex; */
-    /* justify-content: space-between; */
+    display: flex; 
+    align-items: center;
     text-align: center;
 }
 
@@ -56,10 +56,16 @@ h1 {
 }
 
 .logo {
-  /* width: 200%; */
-  height: 100%;
-  padding-right: 90%;
+   display: flex;
+   padding-left: 20px;
+   max-width: 200px;
+   max-height: 200px;
   
+} 
+
+.logo > img {
+  width: 100%;
+  height: 100%;
 }
 
 /* Begin fotoslider */
@@ -231,6 +237,31 @@ a:link {
         text-align: center;
         padding-top: 15px;
         font-size: 30px;
+    }
+
+    ul {
+      list-style-type: none;
+      /* margin: 0;
+      padding: 0;
+      overflow: hidden; */
+      /* background-color: #333; */
+    }
+    
+    li {
+      float: left;
+    }
+    
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 50px;
+      text-decoration: none;
+      margin-left: 100px;
+    }
+    
+    li a:hover {
+      background-color: #0475bc;
     }
     
    
