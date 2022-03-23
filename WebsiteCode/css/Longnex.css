@@ -31,14 +31,7 @@ body {
     min-height: 50px;
 }
 
-.header {
-    /* background-color: green; */
-    background-color: #fa4343;
-    grid-area: header;
-    display: flex; 
-    align-items: center;
-    text-align: center;
-}
+
 
 h1 {
     text-align: center;
@@ -223,6 +216,25 @@ a:link {
     text-decoration: none;
   }
 
+  #myLinks {
+    display: none;
+  }
+  
+  .header {
+    /* background-color: green; */
+    background-color: #fa4343;
+    grid-area: header;
+    display: flex; 
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+  a.icon {
+    color: white;
+    font-size: 3rem;
+  }
+
 @media screen and (min-width: 900px) {
 
     #dashboard {
@@ -251,14 +263,23 @@ a:link {
       float: left;
     }
     
-    li a {
+    #myLinks {
       display: block;
-      color: white;
-      text-align: center;
-      padding: 14px 50px;
-      text-decoration: none;
-      margin-left: 100px;
     }
+    
+    .header {
+      /* background-color: green; */
+      background-color: #fa4343;
+      grid-area: header;
+      display: flex; 
+      align-items: center;
+      text-align: center;
+      
+    }
+
+  a.icon {
+    display: none;
+  }
     
     li a:hover {
       background-color: #0475bc;
