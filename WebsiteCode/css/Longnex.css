@@ -8,24 +8,23 @@ body {
     /* background-color: antiquewhite; */
     background-color: #42b3fa;
     font-family: relative sans-serif;
-    color: black;
+    color: rgb(255, 255, 255);
     width:100vw;
     overflow: hidden;
-  
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Verdana;
+}
+
+main{
+  height: 100vh;
 }
 
 #dashboard {
-    display: grid;
-    grid-template-columns: 190px 1fr;
+
     width: 100%;
-    grid-gap: 20px;
-    grid-template-areas: "header   header" 
-                         "bodywb     bodywb"
-                         "bodywb     bodywb"  
-                         "bodywb     bodywb"  
-                         "footer     footer" 
-                         "footer     footer";
-                         min-height: 100vh;
+
 }
 
 .item {
@@ -43,12 +42,13 @@ h1 {
 }
 
 .bodywb {
-    grid-area: bodywb;
+
 }
 
 .footer {
-    grid-area: footer;
+    display: flex;
     background-color: #fa4343;
+    margin-top: auto;
 }
 
 .logo {
@@ -92,8 +92,8 @@ img {vertical-align: middle;}
   transition: background-color 0.6s ease;
 }
 
-.active {
-  background-color: #55b0c2;
+.active:hover {
+  background-color: gray;
 }
 
 /* Fading animation */
@@ -182,8 +182,6 @@ img {vertical-align: middle;}
     }
   }
 
-  /* Eind prijzen */
-
 h3 {
   text-align: center;
 } 
@@ -199,10 +197,8 @@ h3 {
 } */
 
 .footer {
-    grid-area: footer;
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
+  height: 100px;
+
 }
 
 a:link {
@@ -211,7 +207,7 @@ a:link {
   }
 
   a:visited {
-    color: black;
+    color: white;
     text-decoration: none;
   }
 
@@ -230,11 +226,12 @@ a:link {
   .header {
     /* background-color: green; */
     background-color: #fa4343;
-    grid-area: header;
+
     display: flex; 
     align-items: center;
     text-align: center;
     justify-content: space-between;
+    z-index: 99;
 }
 
   a.icon {
@@ -245,14 +242,12 @@ a:link {
 @media screen and (min-width: 900px) {
 
     #dashboard {
-        grid-template-columns: 200px 1fr 1fr 200px;
-        grid-template-areas: "header    header    header    header"
-                             "bodywb    bodywb    bodywb    bodywb"
-                             "footer    footer    footer    footer";
+
                              
     }
 
     h1 {
+        font-family: Verdana;
         text-align: center;
         padding-top: 15px;
         font-size: 30px;
@@ -284,7 +279,7 @@ a:link {
     .header {
       /* background-color: green; */
       background-color: #fa4343;
-      grid-area: header;
+
       display: flex; 
       align-items: center;
       text-align: center;
@@ -301,22 +296,27 @@ a:link {
     
    
 }
+
+.titeltext {
+  padding-left: 58%;
+  display: flex;
+}
+
 .textlongnex {
-  padding-left: 900px;
+  padding-left: 50%;
   display: flex;
   /* justify-content: end; */
+  z-index:-1 ;
   text-align: center;
 }
 
 .circle-1{
-  height:500px;
-  width:500px;
-  background:blue;
-  position:absolute;
-  bottom:-250px;
-  left:-250px;
-  border-radius:50%;
-  z-index: -1;
+
+    width: 40vw;
+    height: 40vw;
+    border-radius: 50%;
+    background: rgb(111, 111, 216);
+    z-index: -19;
 }
 
 .circle-2{
