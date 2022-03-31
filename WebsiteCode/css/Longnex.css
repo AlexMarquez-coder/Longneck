@@ -41,10 +41,6 @@ h1 {
     font-size: 18px;
 }
 
-.bodywb {
-
-}
-
 .footer {
     display: flex;
     background-color: #fa4343;
@@ -64,6 +60,19 @@ h1 {
   height: 100%;
 }
 
+.titeltext {
+  padding-left: 20%;
+  display: flex;
+}
+
+.textlongnex {
+  /* padding-left: 10%; */
+  display: flex;
+  /* justify-content: end; */
+  z-index:-1 ;
+  /* text-align: center; */
+}
+
 /* Begin fotoslider */
 * {box-sizing: border-box;}
 /* body {font-family: Verdana, sans-serif;} */
@@ -75,8 +84,8 @@ img {vertical-align: middle;}
   max-width: 100px;
   position: relative;
   margin: auto;
-  padding-top: 5%;
-  max-width: 900px;
+  padding-top: 12%;
+  max-width: 1000px;
   max-height: 100px;
   z-index: -1;
 }
@@ -92,9 +101,9 @@ img {vertical-align: middle;}
   transition: background-color 0.6s ease;
 }
 
-.active:hover {
+/* .active:hover {
   background-color: gray;
-}
+} */
 
 /* Fading animation */
 .fade {
@@ -163,12 +172,13 @@ img {vertical-align: middle;}
   
   a {
     color: #2196F3;
+    padding-top: 15px;
+    padding-left: 5%;
   }
   
   hr {
     border: 1px solid lightgrey;
   }
-  
   
   /* Responsive layout - when the screen is less than 800px wide, 
   make the two columns stack on top of each other instead of next to each other 
@@ -285,22 +295,40 @@ a:link {
       text-align: center;
       
     }
+    
+    .footer {
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
   a.icon {
     display: none;
   }
     
     li a:hover {
+      background-color: #42b3fa;
+    }
+
+    li a.active {
+      color: white;
       background-color: #0475bc;
     }
     
-   
-}
+   li a{
+     display: flex;
+     padding: 15px 50px;
+   }
 
-.titeltext {
-  padding-left: 58%;
-  display: flex;
 }
+  h2 {
+    padding-left: 63%;
+    display: flex;
+  }
+/* .titeltext {
+  padding-left: 65%;
+  display: flex;
+} */
 
 .textlongnex {
   padding-left: 50%;
@@ -308,9 +336,10 @@ a:link {
   /* justify-content: end; */
   z-index:-1 ;
   text-align: center;
+  font-size: 20px;
 }
 
-.circle-1{
+/* .circle-1{
 
     width: 40vw;
     height: 40vw;
@@ -339,4 +368,4 @@ a:link {
   right: -300px;
   border-radius: 50%;
   z-index: -1;
-}
+} */
