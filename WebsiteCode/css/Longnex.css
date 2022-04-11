@@ -4,18 +4,22 @@
   box-sizing: border-box;
 }
 
-body {
+#dashboard{
     /* background-color: antiquewhite; */
     background-color: #42b3fa;
     font-family: relative sans-serif;
     color: rgb(255, 255, 255);
     width:100vw;
-    overflow: hidden;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     font-family: Verdana;
 }
+
+.fa-bars::before{
+  content: "\f0c9";
+  padding-right: 10px;
+}	
 
 main{
   height: 100vh;
@@ -33,7 +37,11 @@ main{
     min-height: 50px;
 }
 
+.item-bodywb{
+  display: flex;
+  flex-direction: row;
 
+}
 
 h1 {
     text-align: center;
@@ -52,7 +60,6 @@ h1 {
    padding-left: 20px;
    max-width: 200px;
    max-height: 200px;
-  
 } 
 
 .logo > img {
@@ -66,29 +73,39 @@ h1 {
 }
 
 .textlongnex {
-  /* padding-left: 10%; */
   display: flex;
-  /* justify-content: end; */
-  z-index:-1 ;
-  /* text-align: center; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  z-index:99 ;
 }
 
 /* Begin fotoslider */
 * {box-sizing: border-box;}
 /* body {font-family: Verdana, sans-serif;} */
-.mySlides {display: none;}
+.mySlides {display: flex;
+  justify-content: center;
+  align-items: center;}
 img {vertical-align: middle;}
 
 /* Slideshow container */
-.slideshow-container {
-  max-width: 100px;
-  position: relative;
+ .slideshow-container {
+  /*max-width: 100px;
+  
   margin: auto;
   padding-top: 12%;
-  max-width: 1000px;
+  
   max-height: 100px;
-  z-index: -1;
-}
+  z-index: -1;*/
+  width: auto;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+
+
 
 /* The dots/bullets/indicators */
 .dot {
@@ -190,6 +207,18 @@ img {vertical-align: middle;}
     .col-25 {
       margin-bottom: 20px;
     }
+    #myLinks {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      top: 100px;
+      list-style: none;
+      width: 99%;
+      position: absolute;
+      text-align: center;
+      justify-content: center; 
+      
+    }
   }
 
 h3 {
@@ -229,9 +258,6 @@ a:link {
     text-decoration: none;
   }
 
-  #myLinks {
-    display: none;
-  }
   
   .header {
     /* background-color: green; */
@@ -296,11 +322,6 @@ a:link {
       
     }
     
-    .footer {
-      display: flex;
-      margin-left: auto;
-      margin-right: auto;
-    }
 
   a.icon {
     display: none;
@@ -322,7 +343,7 @@ a:link {
 
 }
   h2 {
-    padding-left: 63%;
+    text-align: center;
     display: flex;
   }
 /* .titeltext {
@@ -331,13 +352,23 @@ a:link {
 } */
 
 .textlongnex {
-  padding-left: 50%;
-  display: flex;
+  /* padding-left: 50%; */
+  /* display: flex; */
   /* justify-content: end; */
-  z-index:-1 ;
+  z-index:99 ;
   text-align: center;
-  font-size: 20px;
+  justify-content: center;
+  font-size: 20px;  
+  color: white;
 }
+
+.mySlides.fade {
+  padding-top: 450px;
+  z-index: 1;
+  display: none;
+}
+
+
 
 /* .circle-1{
 
