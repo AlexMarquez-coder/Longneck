@@ -38,7 +38,7 @@ main{
 }
 
 .item-bodywb{
-  display: flex;
+  /* display: flex; */
   flex-direction: row;
 
 }
@@ -72,14 +72,14 @@ h1 {
   display: flex;
 }
 
-.textlongnex {
+/* .textlongnex {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 50%;
   z-index:99 ;
-}
+} */
 
 /* Begin fotoslider */
 * {box-sizing: border-box;}
@@ -90,7 +90,7 @@ h1 {
 img {vertical-align: middle;}
 
 /* Slideshow container */
- .slideshow-container {
+ /* .slideshow-container { */
   /*max-width: 100px;
   
   margin: auto;
@@ -98,12 +98,12 @@ img {vertical-align: middle;}
   
   max-height: 100px;
   z-index: -1;*/
-  width: auto;
+  /* width: auto;
   height: 450px;
   display: flex;
   justify-content: center;
   align-items: center;
-} 
+}  */
 
 
 
@@ -143,6 +143,58 @@ img {vertical-align: middle;}
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
+
+  #myLinks {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    top: 100px;
+    list-style: none;
+    width: 99%;
+    position: absolute;
+    text-align: center;
+    justify-content: center; 
+  }
+  .textlongnex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    z-index: -99 ;
+  }
+  
+  .slideshow-container {
+    /*max-width: 100px;
+    
+    margin: auto;
+    padding-top: 12%;
+    
+    max-height: 100px;
+    z-index: -1;*/
+    width: auto;
+    height: 250px;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+  } 
+
+  .mySlides.fade {
+    padding-top: 500px;
+    
+  }
+
+  h2 {
+    text-align: center;
+    display: flex;
+    padding-top: 20px;
+  }
+
+  p {
+    display: flex;
+    text-align: initial;
+  }
+  
 }
 
 /* body {
@@ -200,7 +252,7 @@ img {vertical-align: middle;}
   /* Responsive layout - when the screen is less than 800px wide, 
   make the two columns stack on top of each other instead of next to each other 
   (also change the direction - make the "cart" column go on top) */
-  @media (max-width: 800px) {
+  @media (max-width: 820px) {
     .row {
       flex-direction: column-reverse;
     }
@@ -216,9 +268,40 @@ img {vertical-align: middle;}
       width: 99%;
       position: absolute;
       text-align: center;
-      justify-content: center; 
+      justify-content: center;
+      padding-top: 350px; 
+    }
+
+    .item-bodywb{
+      /* display: flex; */
+      flex-direction: row;
+    
+    }
+
+    .mySlides.fade {
+      padding-bottom: 200px;
       
     }
+
+    .footer {
+     padding-bottom: 50px;
+  }
+
+  .slideshow-container {
+    /*max-width: 100px;
+    
+    margin: auto;
+    padding-top: 12%;
+    
+    max-height: 100px;
+    z-index: -1;*/
+    width: auto;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 350px;
+  } 
   }
 
 h3 {
@@ -341,32 +424,53 @@ a:link {
      padding: 15px 50px;
    }
 
-}
+   .textlongnex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    z-index:99 ;
+  }
   h2 {
     text-align: center;
     display: flex;
   }
+
+  .item-bodywb{
+    display: flex;
+    flex-direction: row;
+  
+  }
+
+  .textlongnex {
+    /* padding-left: 50%; */
+    /* display: flex; */
+    /* justify-content: end; */
+    z-index:99 ;
+    text-align: center;
+    justify-content: center;
+    font-size: 20px;  
+    color: white;
+  }
+  
+  .mySlides.fade {
+    padding-top: 190px;
+    z-index: 99;
+    display: none;
+  }
+
+  .footer {
+    height: 130px;
+  }
+
+  
+}
 /* .titeltext {
   padding-left: 65%;
   display: flex;
 } */
 
-.textlongnex {
-  /* padding-left: 50%; */
-  /* display: flex; */
-  /* justify-content: end; */
-  z-index:99 ;
-  text-align: center;
-  justify-content: center;
-  font-size: 20px;  
-  color: white;
-}
-
-.mySlides.fade {
-  padding-top: 450px;
-  z-index: 1;
-  display: none;
-}
 
 
 
