@@ -313,7 +313,7 @@ img {vertical-align: middle;}
   } 
 
   p {
-    display: flex;
+    /* display: flex; */
     text-align: center;
   }
   }
@@ -486,6 +486,7 @@ a:link {
 
   .footer {
     height: 130px;
+    padding-left: 30px;
   }
 
   

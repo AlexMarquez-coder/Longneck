@@ -1,0 +1,532 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  }
+  
+  #dashboard{
+      /* background-color: antiquewhite; */
+      background-color: #42b3fa;
+      font-family: relative sans-serif;
+      color: rgb(255, 255, 255);
+      width:100vw;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      font-family: Verdana;
+  }
+  
+  .fa-bars::before{
+    content: "\f0c9";
+    padding-right: 10px;
+  }	
+  
+  main{
+    height: 100vh;
+  }
+  
+  #dashboard {
+  
+      width: 100%;
+  
+  }
+  
+  .item {
+      /* background-color: #ffa700; */
+      padding: 5px;
+      min-height: 50px;
+  }
+  
+  .item-bodywb{
+    /* display: flex; */
+    flex-direction: row;
+  
+  }
+  
+  h1 {
+      text-align: center;
+      /* padding-top: 15px; */
+      font-size: 18px;
+  }
+  
+  .footer {
+      display: flex;
+      background-color: #fa4343;
+      margin-top: auto;
+  }
+  
+  .logo {
+     display: flex;
+     padding-left: 20px;
+     max-width: 200px;
+     max-height: 200px;
+  } 
+  
+  .logo > img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .titeltext {
+    padding-left: 20%;
+    display: flex;
+  }
+  
+  /* .textlongnex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    z-index:99 ;
+  } */
+  
+  /* Begin fotoslider */
+  * {box-sizing: border-box;}
+  /* body {font-family: Verdana, sans-serif;} */
+  .mySlides {display: flex;
+    justify-content: center;
+    align-items: center;}
+  img {vertical-align: middle;}
+  
+  /* Slideshow container */
+   /* .slideshow-container { */
+    /*max-width: 100px;
+    
+    margin: auto;
+    padding-top: 12%;
+    
+    max-height: 100px;
+    z-index: -1;*/
+    /* width: auto;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }  */
+  
+  
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    /* height: 15px;
+    width: 15px;
+    margin: 0 2px; */
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  /* .active:hover {
+    background-color: gray;
+  } */
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+  
+    #myLinks {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      top: 100px;
+      list-style: none;
+      width: 99%;
+      position: absolute;
+      text-align: center;
+      justify-content: center; 
+    }
+    .textlongnex {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+      z-index: -99 ;
+    }
+    
+    .slideshow-container {
+      /*max-width: 100px;
+      
+      margin: auto;
+      padding-top: 12%;
+      
+      max-height: 100px;
+      z-index: -1;*/
+      width: auto;
+      height: 500px;
+      /* display: flex; */
+      justify-content: center;
+      align-items: center;
+    } 
+  
+    .mySlides.fade {
+      padding-top: 50px;
+      
+    }
+    h2 {
+      text-align: center;
+      display: flex;
+      padding-top: 20px;
+    }
+  
+    p {
+      display: flex;
+      text-align: initial;
+    }
+    
+    /* .footer {
+       padding-top: 20px;
+       padding-left: 10px;
+    } */
+  
+  }
+  
+  /* body {
+      font-family: Arial;
+      font-size: 17px;
+      padding: 8px;
+    } */
+    
+    .row {
+      display: -ms-flexbox; /* IE10 */
+      display: flex;
+      -ms-flex-wrap: wrap; /* IE10 */
+      flex-wrap: wrap;
+      margin: 0 -16px;
+    }
+    
+    .col-25 {
+      -ms-flex: 25%; /* IE10 */
+      flex: 25%;
+    }
+    
+    /* .col-25 {
+      padding: 0 16px;
+    } */
+    
+    .container {
+      background-color: #E2E2E2;
+      /* padding: 5px 20px 15px 20px; */
+      /* border: 1px solid #04b149; */
+      border-radius: 3px;
+    }
+    
+    
+    label {
+      margin-bottom: 10px;
+      display: block;
+    }
+    
+    .icon-container {
+      margin-bottom: 20px;
+      padding: 7px 0;
+      font-size: 24px;
+    }
+    
+    a {
+      color: #2196F3;
+      padding-top: 15px;
+      padding-left: 5%;
+    }
+    
+    hr {
+      border: 1px solid lightgrey;
+    }
+    
+    /* Responsive layout - when the screen is less than 800px wide, 
+    make the two columns stack on top of each other instead of next to each other 
+    (also change the direction - make the "cart" column go on top) */
+    @media (max-width: 820px) {
+      .row {
+        flex-direction: column-reverse;
+      }
+      .col-25 {
+        margin-bottom: 20px;
+      }
+      #myLinks {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        top: 100px;
+        list-style: none;
+        width: 99%;
+        position: absolute;
+        text-align: center;
+        justify-content: center;
+      }
+  
+      .item-bodywb{
+        /* display: flex; */
+        flex-direction: row;
+      
+      }
+  
+      /* .mySlides.fade {
+        padding-top: 800px;
+        
+      } */
+  
+      .footer {
+       padding-top: 20px;
+       padding-left: 10px;
+    }
+  
+    .slideshow-container {
+      /*max-width: 100px;
+      
+      margin: auto;
+      padding-top: 12%;
+      
+      max-height: 100px;
+      z-index: -1;*/
+      width: auto;
+      height: 250px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    } 
+  
+    h2 {
+      text-align: center;
+      
+      padding-top: 20px;
+    } 
+  
+    p {
+      display: flex;
+      text-align: center;
+    }
+    }
+  
+  h3 {
+    text-align: center;
+  } 
+  
+  .text {
+    text-align: center;
+    margin: auto;
+  }
+  
+  .footer {
+    height: 100px;
+  
+  }
+  
+  a:link {
+      color: black;
+      text-decoration: none;
+    }
+  
+    a:visited {
+      color: white;
+      text-decoration: none;
+    }
+  
+    a:hover {
+      text-decoration: none;
+    }
+  
+    a:active {
+      text-decoration: none;
+    }
+  
+    
+    .header {
+      /* background-color: green; */
+      background-color: #fa4343;
+  
+      display: flex; 
+      align-items: center;
+      text-align: center;
+      justify-content: space-between;
+      z-index: 99;
+  }
+  
+    a.icon {
+      color: white;
+      font-size: 3rem;
+    }
+  
+  @media screen and (min-width: 900px) {
+  
+      #dashboard {
+  
+                               
+      }
+  
+      h1 {
+          font-family: Verdana;
+          text-align: center;
+          padding-top: 15px;
+          font-size: 30px;
+      }
+  
+      ul {
+        list-style-type: none;
+        /* margin: 0;
+        padding: 0;
+        overflow: hidden; */
+        /* background-color: #333; */
+      }
+      
+      li {
+        float: left;
+      }
+  
+      #myLinks{
+        display: flex;
+        justify-content: space-between;
+        flex-grow: 1;
+        margin: 0 50px;
+      }
+      
+      .header {
+        /* background-color: green; */
+        background-color: #fa4343;
+  
+        display: flex; 
+        align-items: center;
+        text-align: center;
+        
+      }
+      
+    a.icon {
+      display: none;
+    }
+      
+      li a:hover {
+        background-color: #42b3fa;
+      }
+  
+      li a.active {
+        color: white;
+        background-color: #0475bc;
+      }
+      
+     li a{
+       display: flex;
+       padding: 15px 50px;
+     }
+  
+     .textlongnex {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+      z-index:99 ;
+    }
+    h2 {
+      text-align: center;
+      display: flex;
+    }
+  
+    .item-bodywb{
+      display: flex;
+      flex-direction: row;
+    
+    }
+  
+    .textlongnex {
+      /* padding-left: 50%; */
+      /* display: flex; */
+      /* justify-content: end; */
+      z-index:99 ;
+      text-align: center;
+      justify-content: center;
+      font-size: 20px;  
+      color: white;
+    }
+    
+    .mySlides.fade {
+      padding-top: 155px;
+      z-index: 99;
+      display: none;
+    }
+  
+    .slideshow-container {
+      /*max-width: 100px;
+      
+      margin: auto;
+      padding-top: 12%;
+      
+      max-height: 100px;
+      z-index: -1;*/
+      width: auto;
+      height: 300px;
+      /* display: flex; */
+      justify-content: center;
+      align-items: center;
+    } 
+  
+    /* .mySlides.fade {
+      padding-top: 200px;
+      
+    } */
+  
+    .footer {
+      height: 130px;
+      padding-left: 30px;
+    }
+  
+    
+  }
+  /* .titeltext {
+    padding-left: 65%;
+    display: flex;
+  } */
+  
+  
+  
+  
+  /* .circle-1{
+  
+      width: 40vw;
+      height: 40vw;
+      border-radius: 50%;
+      background: rgb(111, 111, 216);
+      z-index: -19;
+  }
+  
+  .circle-2{
+    height:500px;
+    width:500px;
+    background:blue;
+    position:absolute;
+    top: -250px;
+    right: -250px;
+    border-radius: 50%;
+    z-index: -1;
+  }
+  
+  .circle-3{
+    height:500px;
+    width:500px;
+    background:#fff372;
+    position:absolute;
+    bottom: -300px;
+    right: -300px;
+    border-radius: 50%;
+    z-index: -1;
+  } */
+  
