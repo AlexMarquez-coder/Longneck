@@ -8,3 +8,4 @@
 - Bas de Reus (Game Developer)
 - Daan Dijkstra (Game Developer)
 - Alex Marquez Lourenço (Web Developer)
+- Jamie Vos (Web Developer)
