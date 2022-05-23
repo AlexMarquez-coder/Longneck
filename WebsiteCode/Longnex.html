@@ -1,132 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Longnex</title>
-    <link rel="stylesheet" href="./css/Longnex.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="./Hamburger.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Longnex</title>
+  <link rel="stylesheet" href="./css/Longnex.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
 </head>
+
 <body>
 
-<div id="dashboard">
-    
-    <div class="item header">
-      <div class="logo">
-        <img src="./Logo/The_Longnex_LOGO_Kleur_[Hersteld]2.svg" >        
-      </div>
-      
-      <ul id="myLinks">
-        <li><a class="active" href="./Longnex.html">Home</a></li>
-        <li><a href="https://opensea.io/The_Longnex">NFT's</a></li>
-        <li><a href="./build2/build2/index.html">Games</a></li>
-        <!-- <li><a href="#Merchandise">Merchandise</a></li> -->
-        <li><a href="./About.html">About</a></li>
+  <div class="logo">
+    <a href="">
+      <img src="The_Longnex_LOGO_Kleur_[Hersteld]2.svg">
+    </a>
+  </div>
+ 
+  <div class="nav">
+    <!-- <div class="openMenu"><i class="fa fa-bars"></i></div> -->
+    <div class="menu">
+      <li><a href="#"> Gallery</a></li>
+      <li><a href="#"> Trending</a></li>
+      <li><a href="#"> About</a></li>
+      <li><a href="#"> Team</a></li>
+      <li><a href="#"> FAQ</a></li>
+
+      <!-- <div class="closeMenu"><i class="fa fa-times"></i></div> -->
+
+      <ul class="right">
+        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
       </ul>
-      
-      <a href="" class="icon" onclick="myFunction(event)">
-        <i class="fa fa-bars"></i>
-      </a>
-      
     </div>
     
-    <div class="item-bodywb">
-        <!-- <figure class="circle-1"></figure> -->
-        <div class="slideshow-container">
+  </div>
 
-            <div class="mySlides fade">
-              <img src="./Afbeeldingen/Longnex_Country.png" style="width:31.2%">
-            </div>
-            
-            <div class="mySlides fade">
-              <img src="./Afbeeldingen/Longnex_Metal_test.png" style="width:31.2%">
-            </div>
-            
-            <div class="mySlides fade">
-              <img src="./Afbeeldingen/Longnex_Reggae_test.png" style="width:31.2%">
-            </div>
+  <span id="title">Discover, and collect extraordinary <br><span id="longnex">Longnex</span> NFT's</span>
+  <div class="night">
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+  </div>
+
+  <div class="item-bodywb">
+    <!-- <figure class="circle-1"></figure> -->
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <img src="./Afbeeldingen/Longnex_Country.png" style="width:31.2%">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="./Afbeeldingen/Longnex_Metal_test.png" style="width:31.2%">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="./Afbeeldingen/Longnex_Reggae_test.png" style="width:31.2%">
+      </div>
 
 
-        </div>
+    </div>
 
-            <!-- <h2>The Longnex</h2> -->
-            <!-- <div class="titeltext"><strong>The Longnex</strong></div> -->
-        <div class="textlongnex">
-              <h2>The Longnex</h2>
-              <!-- <strong>The Longnex</strong> -->
-              <p>
-              The Longnex is a TikTok character brand. 
-              
-              They are digital mascots that you feel connected to. 
-              
-              They are characterized by their accessories, hairstyles 
-              
-              and special moves that match their musical style. 
-              
-              They dance and move stereotypically. 
-              
-              The Longnex are true style icons!
-             </p>
-        </div>
-            
-            <div style="text-align:center">
-              <span class="dot"></span> 
-              <span class="dot"></span> 
-              <span class="dot"></span> 
-            </div>
-            
-            <script>
-            var slideIndex = 0;
-            showSlides();
-            
-            function showSlides() {
-              var i;
-              var slides = document.getElementsByClassName("mySlides");
-              var dots = document.getElementsByClassName("dot");
-              for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";  
-              }
-              slideIndex++;
-              if (slideIndex > slides.length) {slideIndex = 1}    
-              for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-              }
-              slides[slideIndex-1].style.display = "flex";  
-              dots[slideIndex-1].className += " active";
-              setTimeout(showSlides, 4000); 
-            }
-            </script>
-            
-              
-        </div>
-    
+    <!-- <div class="textlongnex">
+      <h2>The Longnex</h2>
+      <p>
+        The Longnex is a TikTok character brand.
 
-        <div class="footer">
-          <a href="https://www.facebook.com/thereallongnex">
-            <img src="./Afbeeldingen/Longnex_Facebook2.png" alt="" style="width:32%">
-          </a>
-          <a href="https://www.instagram.com/the_longnex/">
-            <img src="./Afbeeldingen/Longnex_Instagram2.png" alt="" style="width:32%">
-          </a>
-          <!-- <a href="">
-            <img src="./Afbeeldingen/Longnex_Snap.png" alt="" style="width:30%">
-          </a> -->
-          <a href="">
-            <img src="./Afbeeldingen/Longnex_TikTok2.png" alt="" style="width:32%">
-          </a>
-          <a href="">
-            <img src="./Afbeeldingen/Longnex_Twitter2.png" alt="" style="width:32%">
-          </a>
-          <!-- <a href="">
-            <img src="./Afbeeldingen/Longnex_Whatsapp.png" alt="" style="width:30%">
-          </a> -->
-          <a href="">
-            <img src="./Afbeeldingen/Longnex_Youtube2.png" alt="" style="width:32%">
-          </a>       
-       </div>
-   
-</div>
+        They are digital mascots that you feel connected to.
+
+        They are characterized by their accessories, hairstyles
+
+        and special moves that match their musical style.
+
+        They dance and move stereotypically.
+
+        The Longnex are true style icons!
+      </p>
+    </div> -->
+
+    <!-- <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "flex";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 4000);
+      }
+    </script> -->
+
+
+  </div>
 
 </body>
-</html>  
+
+</html>
