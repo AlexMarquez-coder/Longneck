@@ -1,15 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@300&display=swap');
+
 *{
   margin:0;
   padding:0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html {
   height: 100%;
   background: radial-gradient(ellipse at bottom, #1b2735 0%,#090a0f 100%);
 }
+
 body {
- 
+
 }
 
 
@@ -17,21 +21,24 @@ body {
 
 .logo img {
   position: absolute;
-  margin-top: 15px;
-  margin-left: 10px;
+  margin-top: 25px;
+  margin-left: 25px;
   height: 50px;
 }
 
 .nav {
   background: transparent;
   margin-left: 200px;
+  padding: 20px;
 }
 
 .nav .menu {
   list-style: none;
-  text-align: center;
+  text-align: right;
   padding: 0;
+  z-index: 90;
   margin: 0;
+  
 }
 
 .nav li {
@@ -43,36 +50,57 @@ body {
   color: white;
   width: 100px;
   display: block;
-  padding: 30px;
-  font-size: 13px;
-  font-family: Arial, Helvetica, sans-serif;
+  padding: 35px;
+  font-size: 15px;
+  font-family: "Graphik", sans-serif;
   transition: 0.4s;
-  letter-spacing: 1px;
 }
 
 .nav a:hover {
-  color: black;
+  color: orange;
 }
 
 #title {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 0;
   right: 0;
   color: #fff;
   text-align: center;
   font-family: Lato;
   font-weight: 300;
-  font-size: 35px;
+  font-size: 50px;
 
-  font-family: Arial, Helvetica, sans-serif;
   margin-top: -60px;
   padding-left: 10px;
-  font-weight: ;
+  font-family: 'Bebas Neue', cursive;
+font-family: 'Open Sans', sans-serif;
+}
+
+.section {
+  padding: 20px 0;
+}
+
+.a .fa-angle-down {
+  color: white;
+  position: absolute;
+  text-align: center;
+  left: 0;
+  right: 0;
+  top: 58%;
+  font-size: 50px;
+}
+
+.b {
+  height: 100vh;
+  width: 100vh;
+  background-color: red;
+  top: 0;
+  left: 0;
 }
 
 #title span {
-  background-color: #f3ec78;
+    background-color: #f3ec78;
     background-image: linear-gradient(45deg, #f3ec78, #af4261);
     background-size: 100%;
     -webkit-background-clip: text;
@@ -98,9 +126,10 @@ li {
 /* Nav einde */
 
 
-
-
-
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
 
 
 
@@ -139,22 +168,6 @@ h1 {
     font-size: 18px;
 }
 
-.logo {
-   display: flex;
-   padding-left: 20px;
-   max-width: 200px;
-   max-height: 200px;
-} 
-
-.logo > img {
-  width: 100%;
-  height: 100%;
-}
-
-.titeltext {
-  padding-left: 20%;
-  display: flex;
-}
 
 /* Begin fotoslider */
 * {box-sizing: border-box;}
@@ -221,10 +234,11 @@ img {vertical-align: middle;}
 
 
   .night{
-    position: absolute;/* position: relative; */
+    margin-top: 320px;
     width: 100%;
     height: 100%;
     transform: rotateZ(40deg);
+    z-index: -1;
   }
   
   .star{
