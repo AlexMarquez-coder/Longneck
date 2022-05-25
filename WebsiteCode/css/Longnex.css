@@ -276,8 +276,7 @@ img {vertical-align: middle;}
     }
 
     .item-bodywb{
-      /* display: flex; */
-      flex-direction: row;
+      display: none;
     
     }
 
