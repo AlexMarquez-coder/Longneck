@@ -23,7 +23,8 @@ z-index: -1;
   position: absolute;
   margin-top: 25px;
   margin-left: 25px;
-  height: 50px;
+  height: 14%;
+  padding-left: 25px;
 }
 
 .nav {
@@ -32,6 +33,7 @@ z-index: -1;
   position: sticky;
   padding: 20px;
   z-index: 99;
+  padding-right: 50px;
 }
 
 .nav .menu {
@@ -143,24 +145,32 @@ li {
   height: 0;
 }
 
+@media (max-width: 400px) {
+ 
+  .logo img {
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 25px;
+    height: 10%;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  #title {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    right: 0;
+    color: #fff;
+    text-align: center;
+    font-family: Lato;
+    font-weight: 300;
+    font-size: 40px;
+  
+    margin-top: -60px;
+    padding-left: 10px;
+    font-family: 'Bebas Neue', cursive;
+  font-family: 'Open Sans', sans-serif;
+  }
+}
 
 .item {
     /* background-color: #ffa700; */
