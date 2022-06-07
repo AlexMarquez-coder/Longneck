@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="./css/About2.css">
+    
+</head>
+<body>
+    
+    <div class="logo">
+        <a href="">
+          <img src="The_Longnex_LOGO_Kleur_[Hersteld]2.svg" href="Longnex.html">
+        </a>
+      </div>
+     
+      <div class="nav">
+        
+        <div class="menu">
+          <li><a href="./NFT.html">NFT's</a></li>
+          <li><a href="./About2.html">About</a></li>
+          <li><a href="./build2/build2/index.html">Games</a></li>
+          <li><a href="./team.html">Team</a></li>
+          <li><a href="./faq.html">FAQ</a></li>
+    
+          <ul class="right">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <section>
+        <h1 class="title">About</h1>
+    
+        <div class="questions-container">
+ 
+            <p>The Longnex is a TikTok character brand. 
+                They are digital mascots that you feel connected to.                 
+                They are characterized by their accessories, hairstyles                 
+                and special moves that match their musical style.              
+                They dance and move stereotypically.                
+                The Longnex are true style icons!</p>       
+    </section>
+    
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="./Afbeeldingen/577x1047_Country.jpg" >
+        </div>
+
+        <div class="mySlides fade">
+          <img src="./Afbeeldingen/577x1047_HeavyMetal.jpg" >
+        </div>
+
+        <div class="mySlides fade">
+          <img src="./Afbeeldingen/577x1047_Reggae.jpg" >
+        </div>
+
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+    
+          <script>
+            var slideIndex = 0;
+            showSlides();
+    
+            function showSlides() {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) { slideIndex = 1 }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex - 1].style.display = "flex";
+              dots[slideIndex - 1].className += " active";
+              setTimeout(showSlides, 4000);
+            }
+          </script>
+    
+    
+   
+    
+    </div>
+</div>
+</body>
+</html>
