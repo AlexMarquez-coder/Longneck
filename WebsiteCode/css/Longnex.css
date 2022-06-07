@@ -23,23 +23,21 @@ z-index: -1;
   position: absolute;
   margin-top: 25px;
   margin-left: 25px;
-  height: 14%;
-  padding-left: 25px;
+  height: 8%;
 }
 
 .nav {
   background: transparent;
-  margin-left: 200px;
   position: sticky;
-  padding: 20px;
+  padding: 22px;
   z-index: 99;
-  padding-right: 50px;
+  padding-right: 0px;
 }
 
 .nav .menu {
   list-style: none;
   text-align: right;
-  padding: 0;
+  padding: 10;
   z-index: 90;
   margin: 0;
   
@@ -54,7 +52,7 @@ z-index: -1;
   color: white;
   width: 100px;
   display: block;
-  padding: 35px;
+  padding: 25px;
   font-size: 15px;
   font-family: "Graphik", sans-serif;
   transition: 0.4s;
@@ -71,7 +69,7 @@ z-index: -1;
 
 #title {
   position: absolute;
-  top: 45%;
+  top: 50%;
   left: 0;
   right: 0;
   color: #fff;
@@ -101,10 +99,6 @@ font-family: 'Open Sans', sans-serif;
   font-size: 50px;
 }
 
-.a {
-  
-}
-
 .b {
   height: 100vh;
   width: 100%;
@@ -125,7 +119,7 @@ font-family: 'Open Sans', sans-serif;
 
 .right {
   float: right;
-  margin-right: 50px;
+  margin-right: 20px;
 }
 
 li {
