@@ -9,7 +9,7 @@
   <!-- <link rel="shortcut icon" href="/Longneck/WebsiteCode/Afbeeldingen/Longnex_Country.png" type="image/x-icon" /> -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   <script src="./Hamburger.js"></script>
+  
 </head>
 
 <body class="area">
@@ -19,37 +19,45 @@
       <img src="The_Longnex_LOGO_Kleur_[Hersteld]2.svg" href="Longnex.html">
     </a>
   </div>
- 
-  <div class="nav">
-    
 
-    <div class="menu">
-      <li><a href="./NFT.html">NFT's</a></li>
-      <li><a href="./About2.html">About</a></li>
-      <li><a href="./build2/build2/index.html">Games</a></li>
-      <li><a href="./team.html">Team</a></li>
-      <li><a href="./faq.html">FAQ</a></li>
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo">
+        <a href="#"></a>
+      </div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times fa-2x"></i>
+        </div>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">NFT's</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">FAQ</a></li>
 
-      <ul class="right">
-        <li><a href="https://www.facebook.com/thereallongnex"><i class="fa fa-facebook"></i></a></li>
-        <li><a href="https://www.instagram.com/the_longnex/"><i class="fa fa-instagram"></i></a></li>
+        <li><a href="https://www.facebook.com/thereallongnex"><i class="fa fa-facebook fa-lg"></i></a></li>
+        <li><a href="https://www.instagram.com/the_longnex/"><i class="fa fa-instagram fa-lg"></i></a></li>
       </ul>
-    </div>
-  </div>
 
-    <ul class="circles">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-    </ul>
-</div >
+      <div class="icon menu-btn">
+        <i class="fas fa-bars fa-2x"></i>
+      </div>
+    </div>
+  </nav>
+ 
+  <ul class="circles">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul> 
+  </div>
 
   <section class="a">
     <span id="title">Discover, and collect extraordinary <br><span id="longnex">Longnex</span> NFT's</span>
@@ -57,6 +65,25 @@
   </section>
   </div>
 
+  <script>
+    const body = document.querySelector("body");
+const navbar = document.querySelector(".navbar");
+const menuBtn = document.querySelector(".menu-btn");
+const cancelBtn = document.querySelector(".cancel-btn");
+menuBtn.onclick = ()=>{
+  navbar.classList.add("show");
+  menuBtn.classList.add("hide");
+  body.classList.add("disabled");
+}
+cancelBtn.onclick = ()=>{
+  body.classList.remove("disabled");
+  navbar.classList.remove("show");
+  menuBtn.classList.remove("hide");
+}
+window.onscroll = ()=>{
+  this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+}
+  </script>
 </body>
 
 </html>
