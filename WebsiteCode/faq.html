@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
     <!-- google font -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <link rel="shortcut icon" href="Afbeeldingen/thumbnail_thumb.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <!-- css -->
@@ -22,22 +23,30 @@
         </a>
       </div>
 
-    <div class="nav">
+      <nav class="navbar">
+        <div class="content">
+          <div class="logo">
+            <a href="#"></a>
+          </div>
+          <ul class="menu-list">
+            <div class="icon cancel-btn">
+              <i class="fas fa-times fa-2x"></i>
+            </div>
+            <li><a href="./Longnex.html">Home</a></li>
+            <li><a href="./NFT.html">NFT's</a></li>
+            <li><a href="./build2/build2/index.html">Games</a></li>
+            <li><a href="./team.html">Team</a></li>
+            <li><a href="./faq.html">FAQ's</a></li>
     
-
-        <div class="menu">
-          <li><a href="./NFT.html">NFT's</a></li>
-          <li><a href="./About2.html">Trending</a></li>
-          <li><a href="./build2/build2/index.html">Games</a></li>
-          <li><a href="./team.html">Team</a></li>
-          <li><a href="./faq.html">FAQ</a></li>
-    
-          <ul class="right">
-            <li><a href="https://www.facebook.com/thereallongnex"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="https://www.instagram.com/the_longnex/"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://www.facebook.com/thereallongnex"><i class="fa fa-facebook fa-lg"></i></a></li>
+            <li><a href="https://www.instagram.com/the_longnex/"><i class="fa fa-instagram fa-lg"></i></a></li>
           </ul>
+    
+          <div class="icon menu-btn">
+            <i class="fas fa-bars fa-2x"></i>
+          </div>
         </div>
-      </div>
+      </nav>
 
 <section>
     <h1 class="title">FAQ's</h1>
@@ -99,5 +108,24 @@
 
 <!-- external js-->
 <script src="faq.js"></script>
+<script>
+    const body = document.querySelector("body");
+const navbar = document.querySelector(".navbar");
+const menuBtn = document.querySelector(".menu-btn");
+const cancelBtn = document.querySelector(".cancel-btn");
+menuBtn.onclick = ()=>{
+  navbar.classList.add("show");
+  menuBtn.classList.add("hide");
+  body.classList.add("disabled");
+}
+cancelBtn.onclick = ()=>{
+  body.classList.remove("disabled");
+  navbar.classList.remove("show");
+  menuBtn.classList.remove("hide");
+}
+window.onscroll = ()=>{
+  this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+}
+  </script>
 </body>
 </html>
